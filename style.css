@@ -1,6 +1,8 @@
 body{
   background:#EDF4C6;
   font-size:large;
+  font-family: 'EB Garamond', serif;
+
 }
 footer{
   background: #800f6a;
@@ -45,16 +47,19 @@ footer{
     .m-auto{
       margin: auto;
     }
-    .gallery .col-lg-3{
+
+    .gallery .card{
       display: flex;
       border: 5px solid #fff;
-      background: #D7E582;
+      background: #c3d941;
       background-image: linear-gradient(to top left, #fafafa 10%, transparent 10%);
       height: 200px;
     }
     .gallery .col-lg-3 h5{
       color: #800f6a;
       font-weight: 400;
+      font-size: 36px;
+      font-family: 'EB Garamond', serif;
     }
     .stretched-link:after{
       position: absolute;
@@ -67,3 +72,8 @@ footer{
       content: "";
       background-color: rgba(0,0,0,0);
     }
+p{
+  font-weight: 400;
+  color: #303f19;
+  font-size: 24px;
+}
