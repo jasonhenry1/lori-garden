@@ -1,0 +1,169 @@
+
+
+/*
+	Hard-coded constants
+*/
+
+:root
+{
+	--underlying-color	:	transparent		;
+	--page-color		:	#EFC			;
+	--slider-color		:	#664			;
+	--card-color		:	#CD4			;
+	--main-color		:	#DE8			;
+	--form-color		:	#FFF			;
+	--footer-color		:	#806			;
+
+	--no-spacing		:	0px			;
+	--1x-spacing		:	30px			;
+	--2x-spacing		:	60px			;
+	--3x-spacing		:	90px			;
+	--4x-spacing		:	120px			;
+
+	--border-width		:	5px			;
+	--border-style		:	solid			;
+
+	--base-font		:	'EB Garamond', serif	;
+	--base-font-size	:	1.3em			;
+	--base-font-weight	:	400			;
+	--card-font-size	:	0.6em			;
+	--form-font-size	:	2em			;
+	--quote-font		:	'Rage Italic', cursive	;
+	--quote-font-size	:	1.5em			;
+	--quote-line-height	:	1em			;
+
+	--no-display		:	none			;
+
+	--button-display	:	table-cell		;
+	--button-filler		:	10em			;
+	--button-height		:	200px			;
+	--button-accent-angle	:	to top left		;
+	--button-accent-size	:	10%			;
+	--button-horizontal	:	center			;
+	--button-vertical	:	middle			;
+
+	--footer-horizontal	:	right			;
+}
+
+
+
+
+
+/*
+	EXTERNAL: Mustard UI page layout
+*/
+
+.container
+{
+	padding:		var(--no-spacing);
+	background:		var(--page-color);
+	color:			var(--slider-color);
+}
+
+.container *
+{
+	font-family:		var(--base-font);
+	font-size:		var(--base-font-size);
+	font-weight:		var(--base-font-weight);
+}
+
+.card
+{
+	padding:		var(--no-spacing);
+	text-align:		var(--button-horizontal);
+}
+.card a
+{
+	display:		var(--no-display);
+}
+.card-title
+{
+	margin:			var(--no-spacing);
+}
+.card-title a
+{
+	display:		var(--button-display);
+	vertical-align:		var(--button-vertical);
+	width:			var(--button-filler);
+	height:			var(--button-height);
+	padding:		var(--1x-spacing);
+	border:			var(--border-width) var(--border-style) var(--form-color);
+	background-color:	var(--card-color);
+	background-image:	linear-gradient(var(--button-accent-angle), var(--form-color) var(--button-accent-size), var(--underlying-color) var(--button-accent-size));
+	color:			var(--footer-color);
+	font-size:		var(--card-font-size);
+}
+
+
+
+
+
+/*
+	EXTERNAL: Splide slider
+*/
+
+.splide
+{
+	padding:		var(--1x-spacing) var(--4x-spacing);
+	background-color:	var(--slider-color);
+	text-align:		var(--button-horizontal);
+}
+.splide img
+{
+	height: 100%;
+}
+.splide__track
+{
+	border:			var(--border-width) var(--border-style) var(--footer-color);
+	background-color:	var(--card-color);
+}
+
+
+
+
+
+/*
+	Common styles
+*/
+
+header
+{
+	height:			var(--button-height);
+	background-color:	var(--underlying-color);
+}
+
+.gallery
+{
+	padding:		var(--1x-spacing) var(--no-spacing);
+}
+
+main
+{
+	padding:		var(--2x-spacing);
+	background-color:	var(--main-color);
+}
+
+.quote
+{
+	margin-top:		var(--2x-spacing);
+	color:			var(--footer-color);
+	font-family:		var(--quote-font);
+	font-size:		var(--quote-font-size);
+	line-height:		var(--quote-line-height);
+}
+
+form
+{
+	margin:			var(--3x-spacing);
+	padding:		var(--1x-spacing);
+	background-color:	var(--form-color);
+	font-size:		var(--form-font-size) !important;
+}
+
+footer
+{
+	background-color:	var(--footer-color);
+	color:			var(--form-color);
+	text-align:		var(--footer-horizontal);
+}
+
