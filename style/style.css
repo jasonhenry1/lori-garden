@@ -1,0 +1,185 @@
+
+
+/*
+	Hard-coded constants
+*/
+
+:root
+{
+	--no-display		:	none			;
+	--button-bounds-display	:	table			;
+	--button-bounds-fill	:	100%			;
+	--button-area-display	:	table-cell		;
+
+	--button-horizontal	:	center			;
+	--button-vertical	:	middle			;
+	--footer-horizontal	:	right			;
+
+	--header-height		:	auto			;
+	--banner-width		:	100%			;
+	--banner-max-width	:	517px			;
+	--button-height		:	200px			;
+
+	--no-spacing		:	0px			;
+	--1x-spacing		:	30px			;
+	--2x-spacing		:	60px			;
+	--3x-spacing		:	90px			;
+
+	--border-width		:	5px			;
+	--border-style		:	solid			;
+
+	--button-accent-angle	:	to top left		;
+	--button-accent-size	:	10%			;
+
+	--underlying-color	:	transparent		;
+	--page-color		:	#EFC			;
+	--slider-color		:	#664			;
+	--button-color		:	#CD4			;
+	--main-color		:	#DE8			;
+	--form-color		:	#FFF			;
+	--footer-color		:	#806			;
+
+	--base-font		:	'EB Garamond', serif	;
+	--base-font-weight	:	400			;
+	--slider-arrows-size	:	1.2em			;
+	--button-font-size	:	1.5em			;
+	--main-font-size	:	1.5em			;
+	--form-font-size	:	1.5em			;
+	--quote-font		:	'Rage Italic', cursive	;
+	--quote-font-size	:	1.5em			;
+	--quote-line-height	:	1.2em			;
+	--footer-font-size	:	1.2em			;
+}
+
+
+
+
+
+/*
+	EXTERNAL: Mustard UI page layout
+*/
+
+.container
+{
+	padding:		var(--no-spacing);
+	background-color:	var(--page-color);
+	color:			var(--slider-color);
+}
+.container *
+{
+	font-family:		var(--base-font);
+	font-weight:		var(--base-font-weight);
+}
+
+.card
+{
+	text-align:		var(--button-horizontal);
+	padding:		var(--no-spacing);
+}
+.card a
+{
+	display:		var(--no-display);
+}
+.card-title
+{
+	display:		var(--button-bounds-display);
+	width:			var(--button-bounds-fill);
+	margin:			var(--no-spacing);
+}
+.card-title a
+{
+	display:		var(--button-area-display);
+	vertical-align:		var(--button-vertical);
+	height:			var(--button-height);
+	padding:		var(--1x-spacing);
+	border:			var(--border-width) var(--border-style) var(--form-color);
+	background-color:	var(--button-color);
+	background-image:	linear-gradient(var(--button-accent-angle), var(--form-color) var(--button-accent-size), var(--underlying-color) var(--button-accent-size));
+	color:			var(--footer-color);
+	font-size:		var(--button-font-size);
+}
+
+
+
+
+
+/*
+	EXTERNAL: Splide slider
+*/
+
+.splide
+{
+	text-align:		var(--button-horizontal);
+	padding:		var(--1x-spacing) var(--3x-spacing);
+	background-color:	var(--slider-color);
+}
+.splide *
+{
+	font-size:		var(--slider-arrows-size);
+}
+.splide img
+{
+	height: 100%;
+}
+.splide__track
+{
+	border:			var(--border-width) var(--border-style) var(--footer-color);
+	background-color:	var(--button-color);
+}
+
+
+
+
+
+/*
+	Common styles
+*/
+
+header
+{
+	height:			var(--header-height);
+	padding:		var(--1x-spacing);
+	background-color:	var(--underlying-color);
+}
+header img
+{
+	width:			var(--banner-width);
+	max-width:		var(--banner-max-width);
+}
+
+.gallery
+{
+	padding:		var(--1x-spacing) var(--no-spacing);
+}
+
+main
+{
+	padding:		var(--2x-spacing);
+	background-color:	var(--main-color);
+	font-size:		var(--main-font-size);
+}
+.quote
+{
+	margin-top:		var(--2x-spacing);
+	color:			var(--footer-color);
+	font-family:		var(--quote-font);
+	font-size:		var(--quote-font-size);
+	line-height:		var(--quote-line-height);
+}
+
+form
+{
+	margin:			var(--2x-spacing) var(--1x-spacing);
+	padding:		var(--1x-spacing);
+	background-color:	var(--form-color);
+	font-size:		var(--form-font-size);
+}
+
+footer
+{
+	text-align:		var(--footer-horizontal);
+	background-color:	var(--footer-color);
+	color:			var(--form-color);
+	font-size:		var(--footer-font-size);
+}
+
